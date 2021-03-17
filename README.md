@@ -33,19 +33,30 @@ Lo que evaluaremos con este desafío, es que seas capaz de:
 ## Docker 
 
 - Paso 1: Construir la imagen en dockerDesktop con el siguiente comando
-´´´ docker build -t kfroman/pokedex:0.0.1.RELEASE .  ´´´
+ ```sh 
+ docker build -t kfroman/pokedex:0.0.1.RELEASE .  
+  ```
 
-- Paso 2: ejecutar imagen construida localmente para comprobar que no hay errores
-´´´ docker run -d -p 9152:9152 --name=pokedex kfroman/pokedex:0.0.1.RELEASE ´´´
+- Paso 2: ejecutar imagen construida localmente para comprobar que no hay errores con el siguiente comando
+ ```sh 
+ docker run -d -p 9152:9152 --name=pokedex kfroman/pokedex:0.0.1.RELEASE 
+ ```
 
-- Paso 3: Realizar el push de imagen construida a DockerHub
+- Paso 3: Realizar el push de imagen construida a DockerHub con el siguiente comando
+```sh 
 docker push kfroman/pokedex:0.0.1.RELEASE
+```
 
 ## GCloud
 - Paso 1: Crear un Cluster 
 - Paso 2: Conectarse al cluster por consola (obtener informacion del cluster para conexión)
 - Paso 3: Crear el despliegue con el siguiente comando por consola
-´´´  kubectl create deployment pokedex --image=kfroman/pokedex:0.0.1.RELEASE ´´´
+```sh 
+kubectl create deployment pokedex --image=kfroman/pokedex:0.0.1.RELEASE 
+```
+
 - Paso 4: Exponer el servicio con el siguiente comando
-´´´ kubectl expose deployment pokedex --type=LoadBalancer --port=8152 ´´´
+```sh 
+kubectl expose deployment pokedex --type=LoadBalancer --port=8152 
+```
 
