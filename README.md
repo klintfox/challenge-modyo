@@ -1,4 +1,4 @@
-# Challenge-modyo
+# Challenge-Modyo
 
 # Instrucciones
 Para el back-end se pide construir una API REST usando Java Spring Boot que exponga la información al Pokedex. 
