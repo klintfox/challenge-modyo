@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "ce1219a9-cdd2-4cda-b191-bcfce4117400",
+		"name": "Api Poledex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Basic Information Pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://34.69.52.7:9152/v1/pokemon/basic-information/pikachu",
+					"protocol": "http",
+					"host": [
+						"34",
+						"69",
+						"52",
+						"7"
+					],
+					"port": "9152",
+					"path": [
+						"v1",
+						"pokemon",
+						"basic-information",
+						"pikachu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Advance Information Pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://34.69.52.7:9152/v1/pokemon/advance-information/pikachu",
+					"protocol": "http",
+					"host": [
+						"34",
+						"69",
+						"52",
+						"7"
+					],
+					"port": "9152",
+					"path": [
+						"v1",
+						"pokemon",
+						"advance-information",
+						"pikachu"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
