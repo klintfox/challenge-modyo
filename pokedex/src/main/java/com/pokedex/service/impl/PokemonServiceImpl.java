@@ -1,12 +1,14 @@
 package com.pokedex.service.impl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.pokedex.api.PokedexClient;
+import com.pokedex.model.Evolves;
 import com.pokedex.response.PokemonAdvanceResponse;
 import com.pokedex.response.PokemonBasicResponse;
-import com.pokedex.response.PokemonEvolutionsResponse;
 import com.pokedex.service.PokemonService;
 
 @Service
@@ -25,13 +27,11 @@ public class PokemonServiceImpl implements PokemonService {
 		PokemonAdvanceResponse response = new PokemonAdvanceResponse();
 		PokemonBasicResponse basic = new PokemonBasicResponse();
 		basic = client.getPokemonBasicInformation(name);
-
-		PokemonEvolutionsResponse evolutions = new PokemonEvolutionsResponse();
-		evolutions = client.getPokemonEvolutions(basic.getId());
-
+		List<Evolves> lstEvolves = client.getPokemonEvolutions(basic.getId());
+		//Setting Response
 		response.setBasic(basic);
 		response.setDescription(client.getPokemonDescription(basic.getId()));
-		response.setChain(evolutions.getChain());
+		response.setEvolves(lstEvolves);
 
 		return response;
 	}

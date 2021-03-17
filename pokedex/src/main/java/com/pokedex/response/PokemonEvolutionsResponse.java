@@ -1,27 +1,18 @@
 package com.pokedex.response;
 
-import com.google.gson.JsonObject;
-
 public class PokemonEvolutionsResponse {
 
-	JsonObject chain;
+	String evolves;
 
-	public PokemonEvolutionsResponse() {}
-	
-	public JsonObject getChain() {
-		return chain;
+	public PokemonEvolutionsResponse() {
 	}
 
-	public void setChain(JsonObject chain) {
-		this.chain = chain;
+	public String getEvolves() {
+		return evolves;
 	}
 
-	@Override
-	public String toString() {
-		return "PokemonEvolutionsResponse [chain=" + chain + "]";
+	public void setEvolves(String evolves) {
+		this.evolves = evolves;
 	}
 
-	
-	
-	
 }

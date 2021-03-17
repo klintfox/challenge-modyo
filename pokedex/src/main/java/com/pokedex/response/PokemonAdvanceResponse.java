@@ -1,7 +1,9 @@
 package com.pokedex.response;
 
+import java.util.List;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.google.gson.JsonObject;
+import com.pokedex.model.Evolves;
 
 public class PokemonAdvanceResponse {
 
@@ -10,7 +12,7 @@ public class PokemonAdvanceResponse {
 
 	String description;
 
-	JsonObject chain;
+	List<Evolves> evolves;
 
 	public PokemonBasicResponse getBasic() {
 		return basic;
@@ -28,12 +30,12 @@ public class PokemonAdvanceResponse {
 		this.description = description;
 	}
 
-	public JsonObject getChain() {
-		return chain;
+	public List<Evolves> getEvolves() {
+		return evolves;
 	}
 
-	public void setChain(JsonObject chain) {
-		this.chain = chain;
+	public void setEvolves(List<Evolves> evolves) {
+		this.evolves = evolves;
 	}
 
 }
