@@ -34,19 +34,22 @@ Lo que evaluaremos con este desafío, es que seas capaz de:
 
 - Paso 1: Construir la imagen en dockerDesktop con el siguiente comando
  ```sh 
- docker build -t kfroman/pokedex:0.0.1.RELEASE .  
+ docker build -t kfroman/pokedex:0.0.2.RELEASE .  
   ```
 
 - Paso 2: ejecutar imagen construida localmente para comprobar que no hay errores con el siguiente comando
  ```sh 
- docker run -d -p 9152:9152 --name=pokedex kfroman/pokedex:0.0.1.RELEASE 
+ docker run -d -p 9152:9152 --name=pokedex kfroman/pokedex:0.0.2.RELEASE 
  ```
 
 - Paso 3: Realizar el push de imagen construida a DockerHub con el siguiente comando
 ```sh 
 docker push kfroman/pokedex:0.0.1.RELEASE
 ```
-
+- Releases Realizados pen DockerHub
+ ```sh 
+ https://hub.docker.com/repository/docker/kfroman/pokedex
+ ```
 ## GCloud
 - Paso 1: Crear un Cluster 
 - Paso 2: Conectarse al cluster por consola (obtener informacion del cluster para conexión)
@@ -62,7 +65,7 @@ kubectl expose deployment pokedex --type=LoadBalancer --port=9152
 
 #Postman
 
-En el repositorio se encuentra el archivo Api Poledex.postman_collection.json el cual se puede importar y probar ambos métodos para cumplir con los puntos indicados en el texto
+En el repositorio se encuentra el archivo Api Poledex.postman_collection.json el cual se puede importar y probar ambos métodos para cumplir con los puntos indicados en el texto ocomo alternativa se pueden usan los siguientes enlaces 
 
-- Requerimiento 1 : http://34.69.52.7:9152/v1/pokemon/basic-information/pikachu
-- Requerimiento 2: http://34.69.52.7:9152/v1/pokemon/advance-information/pikachu
+- Requerimiento 1: Verbo Get - Url: http://34.69.52.7:9152/v1/pokemon/basic-information/pikachu
+- Requerimiento 2: Verbo Get - Url: http://34.69.52.7:9152/v1/pokemon/advance-information/pikachu
