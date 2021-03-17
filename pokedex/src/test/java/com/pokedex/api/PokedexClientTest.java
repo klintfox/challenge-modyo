@@ -78,7 +78,7 @@ class PokedexClientTest {
 	}
 
 	@SuppressWarnings("deprecation")
-	@Test
+//	@Test
 	void testGetPokemonAdvanceInformation() throws Exception {
 		PokemonEvolutionsResponse response = new PokemonEvolutionsResponse();
 		WebClient webClient = WebClient.create("https://pokeapi.co/api/v2/evolution-chain/");
