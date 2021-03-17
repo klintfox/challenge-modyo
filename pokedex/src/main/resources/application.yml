@@ -1,0 +1,19 @@
+server:
+  port: 9152
+ 
+api:
+  url: https://pokeapi.co/api/v2/pokemon/
+  cache: true
+  time: 86400000 #un dia
+  
+# swagger:
+#  docs:
+#    tittle: Api Pokedex
+#    description: Api Pokedex
+#    version: 1.0.0
+#    terms: Product by Klint Román
+---
+spring:  profiles: develop
+  application:    name: "pokedex-api"
+server:
+  port: 9152  
