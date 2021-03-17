@@ -57,6 +57,6 @@ kubectl create deployment pokedex --image=kfroman/pokedex:0.0.1.RELEASE
 
 - Paso 4: Exponer el servicio con el siguiente comando
 ```sh 
-kubectl expose deployment pokedex --type=LoadBalancer --port=8152 
+kubectl expose deployment pokedex --type=LoadBalancer --port=9152 
 ```
 
