@@ -60,3 +60,9 @@ kubectl create deployment pokedex --image=kfroman/pokedex:0.0.1.RELEASE
 kubectl expose deployment pokedex --type=LoadBalancer --port=9152 
 ```
 
+#Postman
+
+En el repositorio se encuentra el archivo Api Poledex.postman_collection.json el cual se puede importar y probar ambos métodos para cumplir con los puntos indicados en el texto
+
+- Requerimiento 1 : http://34.69.52.7:9152/v1/pokemon/basic-information/pikachu
+- Requerimiento 2: http://34.69.52.7:9152/v1/pokemon/advance-information/pikachu
