@@ -44,7 +44,7 @@ Lo que evaluaremos con este desafío, es que seas capaz de:
 
 - Paso 3: Realizar el push de imagen construida a DockerHub con el siguiente comando
 ```sh 
-docker push kfroman/pokedex:0.0.1.RELEASE
+docker push kfroman/pokedex:0.0.2.RELEASE
 ```
 - Releases Realizados pen DockerHub
  ```sh 
@@ -55,7 +55,7 @@ docker push kfroman/pokedex:0.0.1.RELEASE
 - Paso 2: Conectarse al cluster por consola (obtener informacion del cluster para conexión)
 - Paso 3: Crear el despliegue con el siguiente comando por consola
 ```sh 
-kubectl create deployment pokedex --image=kfroman/pokedex:0.0.1.RELEASE 
+kubectl create deployment pokedex --image=kfroman/pokedex:0.0.2.RELEASE 
 ```
 
 - Paso 4: Exponer el servicio con el siguiente comando
