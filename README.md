@@ -46,7 +46,7 @@ Lo que evaluaremos con este desafío, es que seas capaz de:
 ```sh 
 docker push kfroman/pokedex:0.0.2.RELEASE
 ```
-- Releases Realizados pen DockerHub
+- Releases Realizados en DockerHub
  ```sh 
  https://hub.docker.com/repository/docker/kfroman/pokedex
  ```
